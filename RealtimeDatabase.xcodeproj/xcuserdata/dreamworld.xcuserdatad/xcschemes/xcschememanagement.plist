@@ -7,7 +7,25 @@
 		<key>RealtimeDatabase.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>40</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>BD7D02F62C24B2F800D8D2C2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BD7D030C2C24B2FA00D8D2C2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BD7D03162C24B2FA00D8D2C2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

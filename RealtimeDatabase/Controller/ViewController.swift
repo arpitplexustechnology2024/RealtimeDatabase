@@ -72,40 +72,50 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
         
         // Upload image to Firebase Storage
-        let storageRef = Storage.storage().reference().child("productImages").child("\(UUID().uuidString).jpg")
-        storageRef.putData(imageData, metadata: nil) { (metadata, error) in
-            guard let _ = metadata else {
-                self.hideLoader()
-               print("Error uploading image: \(error?.localizedDescription ?? "Unknown error")")
-                return
-            }
-            
-            storageRef.downloadURL { (url, error) in
-                guard let downloadURL = url else {
-                    self.hideLoader()
-                    print("Error retrieving image URL: \(error?.localizedDescription ?? "Unknown error")")
+        DispatchQueue.global(qos: .background).async {
+            let storageRef = Storage.storage().reference().child("productImages").child("\(UUID().uuidString).jpg")
+            storageRef.putData(imageData, metadata: nil) { (metadata, error) in
+                guard let _ = metadata else {
+                    DispatchQueue.main.async {
+                        self.hideLoader()
+                        print("Error uploading image: \(error?.localizedDescription ?? "Unknown error")")
+                    }
                     return
                 }
                 
-                let product = [
-                    "productName": productName,
-                    "productDescription": productDescription,
-                    "productWeight": productWeight,
-                    "productImageUrl": downloadURL.absoluteString
-                ]
                 
-                let productsRef = Database.database().reference().child("products")
-                let productRef = productsRef.childByAutoId()
-                
-                productRef.setValue(product) { (error, ref) in
-                    if let error = error {
+                storageRef.downloadURL { (url, error) in
+                    guard let downloadURL = url else {
                         self.hideLoader()
-                        print("Error saving product: \(error.localizedDescription)")
-                    } else {
-                        self.hideLoader()
-                        let snackbar = TTGSnackbar(message: "Product saved successfully.", duration: .middle)
-                        snackbar.show()
-                        self.clearTextFields()
+                        print("Error retrieving image URL: \(error?.localizedDescription ?? "Unknown error")")
+                        return
+                    }
+                    
+                    let product = [
+                        "productName": productName,
+                        "productDescription": productDescription,
+                        "productWeight": productWeight,
+                        "productImageUrl": downloadURL.absoluteString
+                    ]
+                    
+                    let productsRef = Database.database().reference().child("products")
+                    let productRef = productsRef.childByAutoId()
+                    
+                    productRef.setValue(product) { (error, ref) in
+                        
+                        if let error = error {
+                            DispatchQueue.main.async {
+                                self.hideLoader()
+                                print("Error saving product: \(error.localizedDescription)")
+                            }
+                        } else {
+                            DispatchQueue.main.async {
+                                self.hideLoader()
+                                let snackbar = TTGSnackbar(message: "Product saved successfully.", duration: .middle)
+                                snackbar.show()
+                                self.clearTextFields()
+                            }
+                        }
                     }
                 }
             }
@@ -135,6 +145,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         descriptionTextView.text = ""
         weightTextField.text = ""
         imageView.image = nil
+    }
+    
+    
+    @IBAction func btnCrashlyticsTapped(_ sender: UIButton) {
+        let numbers = [0]
+        let _ = numbers[1]
     }
     
     
@@ -212,7 +228,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func imagePickerController(_ pickerController: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let selectedImages = info[.originalImage] as? UIImage {
             imageView.image = selectedImages
-            //   selectedImage = selectedImages
         }
         dismiss(animated: true, completion: nil)
     }

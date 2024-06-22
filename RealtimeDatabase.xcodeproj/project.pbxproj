@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24C7C38A1B8BC0CE0D999CBD /* Pods_RealtimeDatabaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F19FB0A2284BB800BBD162 /* Pods_RealtimeDatabaseTests.framework */; };
 		BD7D02FB2C24B2F800D8D2C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7D02FA2C24B2F800D8D2C2 /* AppDelegate.swift */; };
 		BD7D02FD2C24B2F800D8D2C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7D02FC2C24B2F800D8D2C2 /* SceneDelegate.swift */; };
 		BD7D02FF2C24B2F800D8D2C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7D02FE2C24B2F800D8D2C2 /* ViewController.swift */; };
@@ -16,6 +17,13 @@
 		BD7D03122C24B2FA00D8D2C2 /* RealtimeDatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7D03112C24B2FA00D8D2C2 /* RealtimeDatabaseTests.swift */; };
 		BD7D031C2C24B2FA00D8D2C2 /* RealtimeDatabaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7D031B2C24B2FA00D8D2C2 /* RealtimeDatabaseUITests.swift */; };
 		BD7D031E2C24B2FA00D8D2C2 /* RealtimeDatabaseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7D031D2C24B2FA00D8D2C2 /* RealtimeDatabaseUITestsLaunchTests.swift */; };
+		BD7D032B2C24B5ED00D8D2C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD7D032A2C24B5ED00D8D2C2 /* GoogleService-Info.plist */; };
+		BD7D032D2C24BD0200D8D2C2 /* TTGSnackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7D032C2C24BD0200D8D2C2 /* TTGSnackbar.swift */; };
+		BD7D032F2C24D5B200D8D2C2 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7D032E2C24D5B200D8D2C2 /* ProductListViewController.swift */; };
+		BD7D03312C24D5E900D8D2C2 /* ProductListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7D03302C24D5E900D8D2C2 /* ProductListTableViewCell.swift */; };
+		BD7D03332C24D68400D8D2C2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7D03322C24D68400D8D2C2 /* Model.swift */; };
+		BF3C0DE61A2C296F5BDC224A /* Pods_RealtimeDatabase_RealtimeDatabaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13977BEB432A51DE6B0319A /* Pods_RealtimeDatabase_RealtimeDatabaseUITests.framework */; };
+		C08E0D4350F142FFCE9B9762 /* Pods_RealtimeDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB293C5A8B0F4E708529016 /* Pods_RealtimeDatabase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05F19FB0A2284BB800BBD162 /* Pods_RealtimeDatabaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealtimeDatabaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AB293C5A8B0F4E708529016 /* Pods_RealtimeDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealtimeDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18671FA18575B2453BEC68D8 /* Pods-RealtimeDatabase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealtimeDatabase.release.xcconfig"; path = "Target Support Files/Pods-RealtimeDatabase/Pods-RealtimeDatabase.release.xcconfig"; sourceTree = "<group>"; };
+		3D582D3F7839394C83F70645 /* Pods-RealtimeDatabaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealtimeDatabaseTests.release.xcconfig"; path = "Target Support Files/Pods-RealtimeDatabaseTests/Pods-RealtimeDatabaseTests.release.xcconfig"; sourceTree = "<group>"; };
+		72AE196506F6E2F04961729C /* Pods-RealtimeDatabase-RealtimeDatabaseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealtimeDatabase-RealtimeDatabaseUITests.release.xcconfig"; path = "Target Support Files/Pods-RealtimeDatabase-RealtimeDatabaseUITests/Pods-RealtimeDatabase-RealtimeDatabaseUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AA6F8D1BB4F95121118D14DA /* Pods-RealtimeDatabase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealtimeDatabase.debug.xcconfig"; path = "Target Support Files/Pods-RealtimeDatabase/Pods-RealtimeDatabase.debug.xcconfig"; sourceTree = "<group>"; };
+		B3CDA075CD7CD33AA5C4CCA7 /* Pods-RealtimeDatabase-RealtimeDatabaseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealtimeDatabase-RealtimeDatabaseUITests.debug.xcconfig"; path = "Target Support Files/Pods-RealtimeDatabase-RealtimeDatabaseUITests/Pods-RealtimeDatabase-RealtimeDatabaseUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BD20423E2C250A8300B41917 /* RealtimeDatabase.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RealtimeDatabase.entitlements; sourceTree = "<group>"; };
 		BD7D02F72C24B2F800D8D2C2 /* RealtimeDatabase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealtimeDatabase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7D02FA2C24B2F800D8D2C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD7D02FC2C24B2F800D8D2C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +65,13 @@
 		BD7D03172C24B2FA00D8D2C2 /* RealtimeDatabaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealtimeDatabaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7D031B2C24B2FA00D8D2C2 /* RealtimeDatabaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeDatabaseUITests.swift; sourceTree = "<group>"; };
 		BD7D031D2C24B2FA00D8D2C2 /* RealtimeDatabaseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeDatabaseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BD7D032A2C24B5ED00D8D2C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BD7D032C2C24BD0200D8D2C2 /* TTGSnackbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTGSnackbar.swift; sourceTree = "<group>"; };
+		BD7D032E2C24D5B200D8D2C2 /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		BD7D03302C24D5E900D8D2C2 /* ProductListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListTableViewCell.swift; sourceTree = "<group>"; };
+		BD7D03322C24D68400D8D2C2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		C306B9FBA142530CD236025D /* Pods-RealtimeDatabaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealtimeDatabaseTests.debug.xcconfig"; path = "Target Support Files/Pods-RealtimeDatabaseTests/Pods-RealtimeDatabaseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E13977BEB432A51DE6B0319A /* Pods_RealtimeDatabase_RealtimeDatabaseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealtimeDatabase_RealtimeDatabaseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C08E0D4350F142FFCE9B9762 /* Pods_RealtimeDatabase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24C7C38A1B8BC0CE0D999CBD /* Pods_RealtimeDatabaseTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +95,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF3C0DE61A2C296F5BDC224A /* Pods_RealtimeDatabase_RealtimeDatabaseUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4CD7D1A7CD971D8989D59678 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA6F8D1BB4F95121118D14DA /* Pods-RealtimeDatabase.debug.xcconfig */,
+				18671FA18575B2453BEC68D8 /* Pods-RealtimeDatabase.release.xcconfig */,
+				B3CDA075CD7CD33AA5C4CCA7 /* Pods-RealtimeDatabase-RealtimeDatabaseUITests.debug.xcconfig */,
+				72AE196506F6E2F04961729C /* Pods-RealtimeDatabase-RealtimeDatabaseUITests.release.xcconfig */,
+				C306B9FBA142530CD236025D /* Pods-RealtimeDatabaseTests.debug.xcconfig */,
+				3D582D3F7839394C83F70645 /* Pods-RealtimeDatabaseTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		58526A92C2EDB9B13AA493F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AB293C5A8B0F4E708529016 /* Pods_RealtimeDatabase.framework */,
+				E13977BEB432A51DE6B0319A /* Pods_RealtimeDatabase_RealtimeDatabaseUITests.framework */,
+				05F19FB0A2284BB800BBD162 /* Pods_RealtimeDatabaseTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BD7D02EE2C24B2F800D8D2C2 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +132,8 @@
 				BD7D03102C24B2FA00D8D2C2 /* RealtimeDatabaseTests */,
 				BD7D031A2C24B2FA00D8D2C2 /* RealtimeDatabaseUITests */,
 				BD7D02F82C24B2F800D8D2C2 /* Products */,
+				4CD7D1A7CD971D8989D59678 /* Pods */,
+				58526A92C2EDB9B13AA493F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +150,15 @@
 		BD7D02F92C24B2F800D8D2C2 /* RealtimeDatabase */ = {
 			isa = PBXGroup;
 			children = (
-				BD7D02FA2C24B2F800D8D2C2 /* AppDelegate.swift */,
-				BD7D02FC2C24B2F800D8D2C2 /* SceneDelegate.swift */,
-				BD7D02FE2C24B2F800D8D2C2 /* ViewController.swift */,
-				BD7D03002C24B2F800D8D2C2 /* Main.storyboard */,
+				BD20423E2C250A8300B41917 /* RealtimeDatabase.entitlements */,
+				BD7D03342C24DBA800D8D2C2 /* Delegate */,
+				BD7D03382C24DBD200D8D2C2 /* Model */,
+				BD7D03362C24DBBE00D8D2C2 /* View */,
+				BD7D03352C24DBB100D8D2C2 /* Controller */,
 				BD7D03032C24B2FA00D8D2C2 /* Assets.xcassets */,
-				BD7D03052C24B2FA00D8D2C2 /* LaunchScreen.storyboard */,
 				BD7D03082C24B2FA00D8D2C2 /* Info.plist */,
+				BD7D032C2C24BD0200D8D2C2 /* TTGSnackbar.swift */,
+				BD7D032A2C24B5ED00D8D2C2 /* GoogleService-Info.plist */,
 			);
 			path = RealtimeDatabase;
 			sourceTree = "<group>";
@@ -127,6 +180,50 @@
 			path = RealtimeDatabaseUITests;
 			sourceTree = "<group>";
 		};
+		BD7D03342C24DBA800D8D2C2 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				BD7D02FA2C24B2F800D8D2C2 /* AppDelegate.swift */,
+				BD7D02FC2C24B2F800D8D2C2 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		BD7D03352C24DBB100D8D2C2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BD7D02FE2C24B2F800D8D2C2 /* ViewController.swift */,
+				BD7D032E2C24D5B200D8D2C2 /* ProductListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BD7D03362C24DBBE00D8D2C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD7D03372C24DBC700D8D2C2 /* Cell */,
+				BD7D03002C24B2F800D8D2C2 /* Main.storyboard */,
+				BD7D03052C24B2FA00D8D2C2 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD7D03372C24DBC700D8D2C2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BD7D03302C24D5E900D8D2C2 /* ProductListTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BD7D03382C24DBD200D8D2C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD7D03322C24D68400D8D2C2 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +231,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD7D03212C24B2FA00D8D2C2 /* Build configuration list for PBXNativeTarget "RealtimeDatabase" */;
 			buildPhases = (
+				66263523745615D74235F666 /* [CP] Check Pods Manifest.lock */,
 				BD7D02F32C24B2F800D8D2C2 /* Sources */,
 				BD7D02F42C24B2F800D8D2C2 /* Frameworks */,
 				BD7D02F52C24B2F800D8D2C2 /* Resources */,
+				4A749F4DC83B599B4A21632C /* [CP] Embed Pods Frameworks */,
+				BDB68E442C24F69800CCA87F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -151,6 +251,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD7D03242C24B2FA00D8D2C2 /* Build configuration list for PBXNativeTarget "RealtimeDatabaseTests" */;
 			buildPhases = (
+				E9C52C0E39803825B6DFC36C /* [CP] Check Pods Manifest.lock */,
 				BD7D03092C24B2FA00D8D2C2 /* Sources */,
 				BD7D030A2C24B2FA00D8D2C2 /* Frameworks */,
 				BD7D030B2C24B2FA00D8D2C2 /* Resources */,
@@ -169,9 +270,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD7D03272C24B2FA00D8D2C2 /* Build configuration list for PBXNativeTarget "RealtimeDatabaseUITests" */;
 			buildPhases = (
+				1D74C203CE22CA22E8B408A8 /* [CP] Check Pods Manifest.lock */,
 				BD7D03132C24B2FA00D8D2C2 /* Sources */,
 				BD7D03142C24B2FA00D8D2C2 /* Frameworks */,
 				BD7D03152C24B2FA00D8D2C2 /* Resources */,
+				B856930EF1B6138A72ADF440 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD7D03042C24B2FA00D8D2C2 /* Assets.xcassets in Resources */,
+				BD7D032B2C24B5ED00D8D2C2 /* GoogleService-Info.plist in Resources */,
 				BD7D03072C24B2FA00D8D2C2 /* Base in Resources */,
 				BD7D03022C24B2F800D8D2C2 /* Base in Resources */,
 			);
@@ -253,14 +357,143 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D74C203CE22CA22E8B408A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RealtimeDatabase-RealtimeDatabaseUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A749F4DC83B599B4A21632C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealtimeDatabase/Pods-RealtimeDatabase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealtimeDatabase/Pods-RealtimeDatabase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RealtimeDatabase/Pods-RealtimeDatabase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66263523745615D74235F666 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RealtimeDatabase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B856930EF1B6138A72ADF440 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealtimeDatabase-RealtimeDatabaseUITests/Pods-RealtimeDatabase-RealtimeDatabaseUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealtimeDatabase-RealtimeDatabaseUITests/Pods-RealtimeDatabase-RealtimeDatabaseUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RealtimeDatabase-RealtimeDatabaseUITests/Pods-RealtimeDatabase-RealtimeDatabaseUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDB68E442C24F69800CCA87F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/GoogleService-Info.plist",
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\" \n\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+		E9C52C0E39803825B6DFC36C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RealtimeDatabaseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BD7D02F32C24B2F800D8D2C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD7D03332C24D68400D8D2C2 /* Model.swift in Sources */,
+				BD7D032D2C24BD0200D8D2C2 /* TTGSnackbar.swift in Sources */,
 				BD7D02FF2C24B2F800D8D2C2 /* ViewController.swift in Sources */,
+				BD7D032F2C24D5B200D8D2C2 /* ProductListViewController.swift in Sources */,
 				BD7D02FB2C24B2F800D8D2C2 /* AppDelegate.swift in Sources */,
 				BD7D02FD2C24B2F800D8D2C2 /* SceneDelegate.swift in Sources */,
+				BD7D03312C24D5E900D8D2C2 /* ProductListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,13 +670,18 @@
 		};
 		BD7D03222C24B2FA00D8D2C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA6F8D1BB4F95121118D14DA /* Pods-RealtimeDatabase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RealtimeDatabase/RealtimeDatabase.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RealtimeDatabase/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to allow you to select photos.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -464,13 +702,17 @@
 		};
 		BD7D03232C24B2FA00D8D2C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18671FA18575B2453BEC68D8 /* Pods-RealtimeDatabase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RealtimeDatabase/RealtimeDatabase.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RealtimeDatabase/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to allow you to select photos.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -491,6 +733,7 @@
 		};
 		BD7D03252C24B2FA00D8D2C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C306B9FBA142530CD236025D /* Pods-RealtimeDatabaseTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +753,7 @@
 		};
 		BD7D03262C24B2FA00D8D2C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D582D3F7839394C83F70645 /* Pods-RealtimeDatabaseTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -529,6 +773,7 @@
 		};
 		BD7D03282C24B2FA00D8D2C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3CDA075CD7CD33AA5C4CCA7 /* Pods-RealtimeDatabase-RealtimeDatabaseUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +791,7 @@
 		};
 		BD7D03292C24B2FA00D8D2C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72AE196506F6E2F04961729C /* Pods-RealtimeDatabase-RealtimeDatabaseUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
